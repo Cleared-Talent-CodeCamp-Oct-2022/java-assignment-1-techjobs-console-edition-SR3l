@@ -103,11 +103,13 @@ public class JobData {
                 currentValue = currentValue.toLowerCase();
                 if (currentValue.contains(value.toLowerCase())) {
                     jobs.add(job);
+                    break;
                 }
             }
         }
         // TODO - implement this method
-        return null;
+        return jobs;
+
     }
 
     /**
